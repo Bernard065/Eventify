@@ -8,7 +8,7 @@ import MobileNav from "./MobileNav";
 
 const Header = () => {
   return (
-    <header className="w-full border-b">
+    <header className="fixed top-0 left-0 right-0 z-50 w-full border-b bg-white shadow-md">
       <div className="wrapper flex items-center justify-between">
         <Link href="/" className="w-36">
           <Image
