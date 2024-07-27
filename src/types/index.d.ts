@@ -13,3 +13,13 @@ declare interface UpdateUserParams {
   username: string;
   photo: string;
 }
+
+declare interface EventFormProps {
+  userId: string;
+  type: "Create" | "Update";
+}
+
+declare type DropdownProps = {
+  value?: string;
+  onChangeHandler?: () => void;
+};
