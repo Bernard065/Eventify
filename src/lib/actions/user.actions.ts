@@ -6,6 +6,7 @@ import User from "../mongodb/database/models/user.model";
 import Event from "../mongodb/database/models/event.model";
 import Order from "../mongodb/database/models/order.model";
 import { handleError, parseStringify } from "../utils";
+import { CreateUserParams, UpdateUserParams } from "@/types";
 
 export const createUser = async (user: CreateUserParams) => {
   try {

@@ -27,7 +27,11 @@ declare type DropdownProps = {
 };
 
 declare interface FileUploaderProps {
-  imageUrl: string
-  onFieldChange: (value: string) => void
-  setFiles: Dispatch<SetStateAction<File[]>>
+  imageUrl: string;
+  onFieldChange: (value: string) => void;
+  setFiles: Dispatch<SetStateAction<File[]>>;
 }
+
+declare type CreateCategoryParams = {
+  categoryName: string;
+};
