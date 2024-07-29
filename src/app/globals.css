@@ -195,4 +195,21 @@ body {
   .p-medium-12 {
     @apply text-[12px] font-medium leading-[20px];
   }
+
+  /* Form */
+  .input-field {
+    @apply bg-grey-50 h-[54px]  placeholder:text-grey-500 rounded-md p-regular-16 px-5 py-3 border-none focus-visible:ring-transparent !important;
+  }
+
+  .select-field {
+    @apply w-full bg-grey-50 h-[54px] placeholder:text-grey-500 rounded-md p-regular-16 px-5 py-3 border-none focus-visible:ring-transparent focus:ring-transparent !important;
+  }
+
+  .select-item {
+    @apply py-3 cursor-pointer  focus:bg-primary-50;
+  }
+
+  .textarea {
+    @apply bg-grey-50 flex flex-1 placeholder:text-grey-500 p-regular-16 px-5 py-3 border-none focus-visible:ring-transparent !important;
+  }
 }

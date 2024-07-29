@@ -1,3 +1,5 @@
+import { Dispatch, SetStateAction } from "react";
+
 declare interface CreateUserParams {
   clerkId: string;
   email: string;
@@ -12,4 +14,20 @@ declare interface UpdateUserParams {
   lastName: string;
   username: string;
   photo: string;
+}
+
+declare interface EventFormProps {
+  userId: string;
+  type: "Create" | "Update";
+}
+
+declare type DropdownProps = {
+  value?: string;
+  onChangeHandler?: () => void;
+};
+
+declare interface FileUploaderProps {
+  imageUrl: string
+  onFieldChange: (value: string) => void
+  setFiles: Dispatch<SetStateAction<File[]>>
 }
