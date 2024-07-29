@@ -20,6 +20,7 @@ import {
 import { ICategory } from "@/lib/mongodb/database/models/category.model";
 import { startTransition, useState } from "react";
 import { Input } from "./ui/input";
+import { DropdownProps } from "@/types";
 
 const Dropdown = ({ onChangeHandler, value }: DropdownProps) => {
   const [categories, setCategories] = useState<ICategory[]>([]);
@@ -32,7 +33,7 @@ const Dropdown = ({ onChangeHandler, value }: DropdownProps) => {
   return (
     <Select onValueChange={onChangeHandler} defaultValue={value}>
       <SelectTrigger className="select-field">
-        <SelectValue placeholder="Category" />
+        <SelectValue placeholder="Select category" />
       </SelectTrigger>
       <SelectContent>
         {categories.length > 0 &&
